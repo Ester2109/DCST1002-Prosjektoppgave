@@ -11,7 +11,7 @@ function Button({ children, buttonSize, variant, ...props }) {
       style={{
         fontSize: fontSize,
         background: variant === "outlined" ? "transparent" : "red",
-        border: "3px solid red",
+        border: "10px solid red",
       }}
       {...props}
     >
