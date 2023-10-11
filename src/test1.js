@@ -7,10 +7,10 @@ function Page() {
             gap: '1rem'
         }}>
 
-        <Button />
-        <Button />
-        <Button />
-        <Button />
+        <Button>asdsadsd</Button>
+        <Button>asdsadjhasdh</Button>
+        <Button>hjdfsd</Button>
+        <Button>asdkjasdsjkdsaj</Button>
         </div>
     )
 }
