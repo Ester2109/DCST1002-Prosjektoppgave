@@ -1,12 +1,12 @@
 .wrapper {
-  width: 70%;
+  width: 50%;
   margin: auto;
   padding-top: 5rem;
   height: 100vh;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .wrapper {
-    width: 100%;
+    width: 90%;
   }
 }

@@ -38,5 +38,15 @@
 .subText {
   font-weight: lighter;
   margin-top: auto;
-  margin-bottom: 4%;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 750px) {
+  .overskrift {
+    font-size: 2rem;
+  }
+
+  .subText {
+    font-size: 1rem;
+  }
 }

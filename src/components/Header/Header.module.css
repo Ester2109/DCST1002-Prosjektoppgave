@@ -1,7 +1,6 @@
 .header {
   width: 100%;
-  height: 5rem;
-  transition: background 400ms ease-in-out;
+  transition: background 400ms ease-in-out, height 200ms ease-in-out;
   z-index: 100;
 }
 
