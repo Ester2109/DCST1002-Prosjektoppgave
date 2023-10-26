@@ -21,3 +21,12 @@
 .headerlogo {
   height: 35%;
 }
+
+@media screen and (max-width: 750px) {
+  .buttons {
+    display: none;
+  }
+  .contentWrapper {
+    justify-content: center;
+  }
+}
