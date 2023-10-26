@@ -1,5 +1,23 @@
 .header {
   width: 100%;
   height: 5rem;
-  background: gray;
+  transition: background 400ms ease-in-out;
+  z-index: 100;
+}
+
+.contentWrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.headerlogo {
+  height: 35%;
 }
