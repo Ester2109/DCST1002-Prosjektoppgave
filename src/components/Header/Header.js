@@ -13,7 +13,7 @@ function Header({ style, ...props }) {
 
       if (posY > 0 && !blur) setBlur(true);
 
-      if (posY == 0 && blur) setBlur(false);
+      if (posY === 0 && blur) setBlur(false);
 
       if (posY > height && !small) setSmall(true);
 

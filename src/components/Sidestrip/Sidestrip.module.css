@@ -1,0 +1,21 @@
+.wrapper {
+  position: sticky;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  top: 140px;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+
+.SidebarButton {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border-width: 0 0 2px 0;
+  border-style: dashed;
+  border-color: rgba(150, 150, 150, 0.5);
+  text-wrap: nowrap;
+  font-size: medium;
+  background-color: white;
+  transition-duration: 0.4s;
+}
