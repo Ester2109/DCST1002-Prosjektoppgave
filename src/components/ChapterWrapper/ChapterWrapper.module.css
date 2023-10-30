@@ -1,0 +1,19 @@
+.wrapper {
+  width: 80%;
+  display: grid;
+  margin: auto;
+  grid-template-columns: min-content auto;
+  column-gap: 10%;
+}
+
+@media (max-width: 750px) {
+  .sidestrip {
+    display: none;
+  }
+
+  .wrapper {
+    padding-top: 5rem;
+    grid-template-columns: auto;
+    grid-template-rows: min-content auto;
+  }
+}

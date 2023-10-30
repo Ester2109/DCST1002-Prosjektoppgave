@@ -1,13 +1,13 @@
 import styles from "./Sidestrip.module.css";
 
-const Sidestrip = ({ children, style, ...props }) => {
+const Sidestrip = ({ children, className, ...props }) => {
   return (
-    <div className={styles.wrapper}>
+    <div className={`${className} ${styles.wrapper}`} {...props}>
       <SidebarButton>Bakgrunn for oppgaven</SidebarButton>
-      <SidebarButton>Kapittel 2</SidebarButton>
-      <SidebarButton>Kapittel 3</SidebarButton>
-      <SidebarButton>Kapittel 4</SidebarButton>
-      <SidebarButton>Kapittel 5</SidebarButton>
+      <SidebarButton>Hva er posisjonsdeling?</SidebarButton>
+      <SidebarButton>Hva tenker dere om dette?</SidebarButton>
+      <SidebarButton>Konsekvender</SidebarButton>
+      <SidebarButton>Oppsummering</SidebarButton>
     </div>
   );
 };

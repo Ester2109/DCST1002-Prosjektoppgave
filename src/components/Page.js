@@ -1,8 +1,10 @@
 import Header from "./Header/Header";
 import Welcome from "./Welcome/Welcome";
 import Chapter2 from "./chapters/Chapter2/Chapter2";
+import Chapter3 from "./chapters/Chapter3/Chapter3";
 import Sidestrip from "./Sidestrip/Sidestrip";
-import Screen from "./Screen/Screen";
+import Quiz from "./Quiz/Quiz";
+import ChapterWrapper from "./ChapterWrapper/ChapterWrapper";
 
 function Page() {
   return (
@@ -13,18 +15,7 @@ function Page() {
         }}
       />
       <Welcome />
-      <div
-        style={{
-          width: "80%",
-          display: "grid",
-          margin: "auto",
-          gridTemplateColumns: "min-content auto",
-          columnGap: "10%",
-        }}
-      >
-        <Sidestrip />
-        <Chapter2 />
-      </div>
+      <ChapterWrapper />
     </>
   );
 }
