@@ -14,7 +14,7 @@
 
   .questionMark {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 1rem;
     transform: translateY(-40%);
     color: rgba(150, 150, 150, 0.5);
