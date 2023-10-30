@@ -9,7 +9,17 @@ const Chapter3 = () => {
       <Paragraph>hallaballa</Paragraph>
       <Paragraph topSpacing={true}>hallaballa</Paragraph>
       <Paragraph topSpacing={true}>hallaballa</Paragraph>
-      <Quiz>Spørsmålet</Quiz>
+      <Quiz>
+        <Paragraph>
+        Larsen liker ikke kaffe fordi han
+        er en taper
+        Larsen er en guttefløyte
+        </Paragraph>
+        <Paragraph>
+        jsdhf
+        jsdhf
+        </Paragraph>
+      </Quiz>
     </Screen>
   );
 };
