@@ -4,7 +4,7 @@ import Quiz from "../../Quiz/Quiz";
 
 const Chapter3 = () => {
   return (
-    <Screen>
+    <Screen id="Chapter3">
       <h2>Hva er posisjonsdeling?</h2>
       <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Ut quis eleifend lectus, sed lobortis elit.

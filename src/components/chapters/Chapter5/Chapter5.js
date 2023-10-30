@@ -4,7 +4,7 @@ import Screen from "../../Screen/Screen";
 
 const Chapter5 = ({ style }) => {
     return (
-        <Screen style={style}>
+        <Screen id="Chapter5" style={style}>
             <div>
                 <h2>Kapittel 5</h2>
                 <Paragraph>

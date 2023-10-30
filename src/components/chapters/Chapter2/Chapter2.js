@@ -4,7 +4,7 @@ import Paragraph from "../../Paragraph";
 
 const Chapter2 = ({ style }) => {
   return (
-    <Screen style={style}>
+    <Screen id="Chapter2" style={style}>
       <div>
         <h2>Bakgrunn for oppgaven</h2>
         <Paragraph>
