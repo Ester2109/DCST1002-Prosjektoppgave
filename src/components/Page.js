@@ -5,6 +5,8 @@ import Chapter3 from "./chapters/Chapter3/Chapter3";
 import Sidestrip from "./Sidestrip/Sidestrip";
 import Quiz from "./Quiz/Quiz";
 import ChapterWrapper from "./ChapterWrapper/ChapterWrapper";
+import Footer from "./Footer/Footer";
+
 
 function Page() {
   return (
@@ -16,6 +18,7 @@ function Page() {
       />
       <Welcome />
       <ChapterWrapper />
+      <Footer />
     </>
   );
 }

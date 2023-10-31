@@ -30,7 +30,7 @@ const Chapter4 = ({ style }) => {
                     hallaballa
                 </Paragraph>
                 <Quiz>
-                    Spørsmålet
+                    Sondre er kul
                 </Quiz>
             </div>
         </Screen>

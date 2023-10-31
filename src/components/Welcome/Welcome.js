@@ -2,7 +2,7 @@ import styles from "./Welcome.module.css";
 
 const Welcome = () => {
   return (
-    <div className={styles.welcome}>
+    <div id="Top" className={styles.welcome}>
       <div className={styles.vignette} />
       <div className={styles.content}>
         <h1 className={styles.overskrift}>
