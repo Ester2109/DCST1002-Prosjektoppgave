@@ -8,24 +8,33 @@ const Chapter2 = ({ style }) => {
       <div>
         <h2>Bakgrunn for oppgaven</h2>
         <Paragraph>
-          Vi er fire studenter som studerer bachelor i digital infrastruktur og
-          cybersikkerhet ved fakultet for informasjonsteknologi og elektronikk
-          ved NTNU i Trondheim. I emnet cybersikkerhet i teamarbeid (DCST1002)
-          har vi fått en prosjektoppgave hvor vi skal presentere en
-          problemstilling til en valgfri målgruppe gjennom et læringsobjekt. Vi
-          har da valgt problemstillingen:
+        Hva er konsekvensene av posisjonsdeling når man er i tjeneste 
+        eller på Forsvarets områder? I dagens samfunn er vi så og si 
+        «avhengig» av mobilen vår. For å få tinder-matcher i nærheten 
+        av deg eller finne den nærmeste pizzarestauranten har vi som 
+        mobilbrukere en tendens til å tillate posisjonsdeling for at 
+        dette skal være mulig.
         </Paragraph>
         <Paragraph topSpacing={true}>
-          <Quote>
-            Hva er konsekvensene av posisjonsdeling på mobile enheter i tjeneste
-            eller på Forsvarets områder?
-          </Quote>
+        Hver dag deler forsvarspersonell og vernepliktige informasjon om sin 
+        posisjon og sine bevegelser uten at de selv er klar over det. For en 
+        vanlig sivil person har det kanskje ikke så mye å si om noen apper på 
+        telefonen har tilgang til informasjon om deres bevegelser, men 
+        dersom det skulle oppstå tilspissede situasjoner vil 
+        bevegelsesmønstrene til forsvarspersonell potensielt og vernepliktige 
+        kunne avsløre viktig informasjon til uønskede aktører. Dette er noe 
+        de fleste i Forsvaret tenker alt for lite på, og det krever 
+        bevisstgjøring og opplæring av personellet for å innarbeide gode 
+        prosedyrer og rutiner på dette området.
         </Paragraph>
         <Paragraph topSpacing={true}>
-          I tilknytting til denne problemstillingen har vi valgt vernepliktige
-          og ansatte i forsvaret som målgruppe. Vi har valgt å lage en
-          interaktiv nettside som læringsobjekt, hvor enkeltman får informasjon
-          tilknyttet posisjonsdeling
+         <img
+         src="/images/Bilde_9.png"
+         alt="Kystvakt"
+         style={{
+          height: "40%",
+         }}
+         />
         </Paragraph>
       </div>
     </Screen>

@@ -21,7 +21,7 @@ const Sidestrip = ({ children, className, ...props }) => {
         Hva tenker dere om dette?
       </SidebarButton>
       <SidebarButton onClick={() => scrollToChapter("Chapter5")}>
-        Konsekvender
+        Konsekvenser
       </SidebarButton>
       <SidebarButton onClick={() => scrollToChapter("Chapter6")}>
         Oppsummering

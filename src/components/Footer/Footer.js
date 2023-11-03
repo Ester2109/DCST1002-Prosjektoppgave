@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "../Button/Button";
 import styles from "./Footer.module.css";
+import Dropdown from "../Dropdown/Dropdown";
 
 const Footer = ({ children, style, ...props }) => {
 
@@ -18,9 +19,13 @@ const Footer = ({ children, style, ...props }) => {
            ...style,
        }}
        {...props}>
-    <div className="footerButton">
+    <div className={styles.footerButton}>
+       <Button onClick={() => scrollToTop("Top")} variant={"text"}>Til toppen</Button> 
+        
         <Button variant={"text"}>Om oss</Button>
-        <Button onClick={() => scrollToTop("Top")} variant={"text"}>Til toppen</Button>
+        <Button variant={"text"}>Kilder</Button>
+        <Button variant={"text"}>Bilder</Button>
+        
     </div>
     <img 
     src="/images/ntnulogo1.png"
