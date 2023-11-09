@@ -6,11 +6,14 @@ import Paragraph from "../Paragraph";
 import AboutDialog from "../AboutDialog/AboutDialog";
 import Modal from "../Modal/Modal";
 import SourcesDialog from "../SourcesDialog/SourcesDialog";
+import PictureDialog from "../PictureDialog/PictureDialog";
+import Image from "../Image/Image";
 
 const Footer = ({ style, ...props }) => {
   const [small] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const [showSources, setShowSources] = useState(false);
+  const [showPictures, setShowPictures] = useState(false);
 
   const scrollToTop = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -28,15 +31,12 @@ const Footer = ({ style, ...props }) => {
     setShowSources(!showSources);
   };
 
+  const togglePictures = () => {
+    setShowPictures(!showPictures);
+  };
+
   return (
-    <div
-      className={styles.footer}
-      style={{
-        height: small ? "3rem" : "30rem",
-        ...style,
-      }}
-      {...props}
-    >
+    <div className={styles.footer} {...props}>
       <div className={styles.footerButton}>
         <Button onClick={() => scrollToTop("Top")} variant={"text"}>
           Til toppen
@@ -46,23 +46,22 @@ const Footer = ({ style, ...props }) => {
           Om oss
         </Button>
 
-        <Button variant={"text"}>Bilder</Button>
+        <Button variant={"text"} onClick={togglePictures}>
+          Bilder
+        </Button>
+        <AboutDialog open={showAbout} onClose={toggleAbout} />
+        <SourcesDialog onClose={toggleSources} open={showSources} />
+        <PictureDialog open={showPictures} onClose={togglePictures} />
         <Button variant={"text"} onClick={toggleSources}>
           Referanser
         </Button>
         <AboutDialog open={showAbout} onClose={toggleAbout} />
         <SourcesDialog onClose={toggleSources} open={showSources} />
       </div>
-      <img
+      <Image
         src="/images/ntnulogo1.png"
-        alt="Stor ntnulogo"
-        style={{
-          width: "25%",
-          height: "auto",
-          marginTop: "22%",
-          display: "center",
-          opacity: small ? "0" : "1",
-        }}
+        alt="NTNU sin logo"
+        style={{ maxWidth: "20rem", marginTop: "5rem" }}
       />
     </div>
   );

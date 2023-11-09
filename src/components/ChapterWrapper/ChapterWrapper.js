@@ -21,7 +21,12 @@ const ChapterWrapper = () => {
         {/* <Chapter4 /> */}
         <Chapter5 />
         <Chapter6 />
-        <Chapter7 />
+        <Chapter7
+          style={{
+            minHeight: "fit-content",
+            padding: "5rem auto",
+          }}
+        />
       </div>
     </div>
   );

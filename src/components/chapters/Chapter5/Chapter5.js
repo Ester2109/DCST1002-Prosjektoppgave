@@ -2,6 +2,7 @@ import Answer from "../../Answer/Answer";
 import Paragraph from "../../Paragraph";
 import Quiz from "../../Quiz/Quiz";
 import Screen from "../../Screen/Screen";
+import Image from "../../Image/Image";
 
 const Chapter5 = ({ style }) => {
   return (
@@ -34,19 +35,8 @@ const Chapter5 = ({ style }) => {
           posisjonsstjenester, som gir andre brukere informasjon om hvor langt
           unna du befinner deg.
         </Paragraph>
-        <Paragraph topSpacing={true}>
-          Enheten din samler hele tiden inn data om hvor du oppholder og beveger
-          deg. Vi har sett at tjenester som løpeapplikasjonen «Strava» tidligere
-          har avslørt hvor soldater trener og beveger seg, både på militære
-          baser i hjemlandene sine, men også på deployering. Såkalte «heatmaps»
-          som her sammenfatter bevegelsesmønstre, kan avsløre både
-          infrastrukturen på militære og begrensede områder, og er en nokså
-          åpenbar sårbarhet. Tidligere har man også sett at soldater på øvelse
-          som benyttet datingtjenesten «Tinder» har blitt avslørt av
-          posisjonstjenester, som gir andre brukere informasjon om hvor langt
-          unna du befinner deg.
-        </Paragraph>
-        <Paragraph>
+        <Image src="/images/Bilde_6.jpg" alt="øvelse"/>
+        <Paragraph topSpacing>
           Som privatperson inneholder posisjonsdataen din mer enn bare
           overfladisk informasjon om hvor du har oppholdt deg. Svært mye
           informasjon om for eksempel religion, seksuell legning og politiske

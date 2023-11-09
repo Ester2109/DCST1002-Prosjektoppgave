@@ -1,4 +1,4 @@
-const Image = ({ ...props }) => {
+const Image = ({ style, ...props }) => {
   return (
     <img
       style={{
@@ -8,6 +8,7 @@ const Image = ({ ...props }) => {
         fontStyle: "italic",
         shapeMargin: "1rem",
         borderRadius: ".5rem",
+        ...style,
       }}
       {...props}
     />

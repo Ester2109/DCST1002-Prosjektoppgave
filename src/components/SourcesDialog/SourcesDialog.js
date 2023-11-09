@@ -36,13 +36,17 @@ const SourcesDialog = ({ open, onClose }) => {
         </a>
       </Paragraph>
       <Paragraph topSpacing={true}>
-        Apple Inc. (2023). Apple.com. Hentet fra Find My iPhone:
-        https://apps.apple.com/us/app/find-my-iphone/id376101648
+        Apple Inc. (2023). Apple.com. Hentet fra Find My 
+        <a href="https://apps.apple.com/us/app/find-my-iphone/id376101648">
+        iPhone:
+          </a>
       </Paragraph>
       <Paragraph topSpacing={true}>
         NAV. (u.d.). NAV KUNNSKAPSBANKEN. (L. Johansen, & M. Flatebø,
-        Redaktører) Hentet fra Posisjonsdeling og sporing av mobile enheter:
-        https://www.kunnskapsbanken.net/kognisjon/allmennteknologi/posisjonsdeling-og-sporing-av-mobile-enheter/
+        Redaktører) Hentet fra Posisjonsdeling og sporing av mobile
+        <a href="https://www.kunnskapsbanken.net/kognisjon/allmennteknologi/posisjonsdeling-og-sporing-av-mobile-enheter/">
+          enheter
+        </a>
       </Paragraph>
       <Paragraph topSpacing={true}>
         Gundersen, M., Skille, Ø., Lied, H., Grafsrønningen, M., & Jansson, H.

@@ -1,21 +1,16 @@
 import Modal from "../Modal/Modal";
+import Paragraph from "../Paragraph";
 
 const AboutDialog = ({ open, onClose }) => {
   return (
     <Modal onClose={onClose} open={open}>
-      Prosjektet er laget av oss:
-      <br />
-      <br />
-      Sondre Søndergaard: email
-      <br />
-      <br />
-      Helene Askeland: email
-      <br />
-      <br />
-      Jacob Smukkestad: email
-      <br />
-      <br />
-      Ester Halvorsen: esterdh@stud.ntnu.no
+      <Paragraph style={
+        {fontWeight: 700,}
+      }>Prosjektet er laget av</Paragraph>
+      <Paragraph topSpacing>Sondre Søndergaard: email</Paragraph>
+      <Paragraph>Helene Askeland: email</Paragraph>
+      <Paragraph>Jacob Smukkestad: email</Paragraph>
+      <Paragraph>Ester Halvorsen: esterdh@stud.ntnu.no</Paragraph>
     </Modal>
   );
 };
