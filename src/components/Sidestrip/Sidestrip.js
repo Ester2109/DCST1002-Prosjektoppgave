@@ -17,13 +17,16 @@ const Sidestrip = ({ children, className, ...props }) => {
       <SidebarButton onClick={() => scrollToChapter("Chapter3")}>
         Hva er posisjonsdeling?
       </SidebarButton>
-      <SidebarButton onClick={() => scrollToChapter("Chapter4")}>
+      {/* <SidebarButton onClick={() => scrollToChapter("Chapter4")}>
         Hva tenker dere om dette?
-      </SidebarButton>
+      </SidebarButton> */}
       <SidebarButton onClick={() => scrollToChapter("Chapter5")}>
         Konsekvenser
       </SidebarButton>
       <SidebarButton onClick={() => scrollToChapter("Chapter6")}>
+        Hva kan enkeltmann gjøre?
+      </SidebarButton>
+      <SidebarButton onClick={() => scrollToChapter("Chapter7")}>
         Oppsummering
       </SidebarButton>
     </div>

@@ -1,26 +1,24 @@
 .footer {
-    height: 70vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    color: white;
-    background-color: rgba(150, 150, 150, 0.5);
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  background-color: rgba(150, 150, 150, 0.5);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
 }
 
 .footerButton {
-    position: sticky;
-    top: 155px;
-    flex-direction: column;
-    display: block;
+  top: 155px;
+  flex-direction: column;
+  display: block;
 }
 
 .footerButton > button {
-    position: relative;
-    margin-top: 1rem;
+  position: relative;
+  margin-top: 1rem;
 }

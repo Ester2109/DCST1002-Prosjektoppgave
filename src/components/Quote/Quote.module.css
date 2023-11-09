@@ -4,6 +4,8 @@
   border: 2px solid rgb(100, 100, 100);
   overflow: hidden;
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .quotation {
@@ -17,6 +19,6 @@
   top: 50%;
   left: 1rem;
   transform: translateY(-40%);
-  color: rgba(150, 150, 150, 0.5);
+  color: rgba(150, 150, 150, 0.2);
   font-size: 10rem;
 }

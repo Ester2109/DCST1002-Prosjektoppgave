@@ -1,10 +1,15 @@
 import Button from "../Button/Button";
+import Dropdown from "../Dropdown/Dropdown";
 import styles from "./Header.module.css";
-import { useEffect, useState } from "react";
+import TaskDialog from "../TaskDialog/TaskDialog";
+import { useEffect, useMemo, useRef, useState } from "react";
+import AboutDialog from "../AboutDialog/AboutDialog";
 
 function Header({ style, ...props }) {
   const [blur, setBlur] = useState(false);
   const [small, setSmall] = useState(false);
+  const [taskVisible, setTaskVisible] = useState(false);
+  const [aboutVisible, setAboutVisible] = useState(false);
 
   useEffect(() => {
     const scrollHandler = () => {
@@ -26,6 +31,14 @@ function Header({ style, ...props }) {
       window.removeEventListener("scroll", scrollHandler);
     };
   }, [blur, small]);
+
+  const toggleAbout = () => {
+    setAboutVisible(!aboutVisible);
+  };
+
+  const toggleTask = () => {
+    setTaskVisible(!taskVisible);
+  };
 
   return (
     <div
@@ -61,8 +74,14 @@ function Header({ style, ...props }) {
             opacity: small ? "0" : "1",
           }}
         >
-          <Button variant={"text"}>Oppgavebeskrivelse</Button>
-          <Button variant={"filled"}>Om oss</Button>
+          <Button variant={"text"} onClick={toggleTask}>
+            Oppgavebeskrivelse
+          </Button>
+          <Button variant={"filled"} onClick={toggleAbout}>
+            Om oss
+          </Button>
+          <TaskDialog open={taskVisible} onClose={toggleTask} />
+          <AboutDialog open={aboutVisible} onClose={toggleAbout} />
         </div>
       </div>
     </div>

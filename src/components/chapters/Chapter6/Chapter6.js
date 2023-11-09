@@ -1,5 +1,4 @@
 import Paragraph from "../../Paragraph"
-import Quiz from "../../Quiz/Quiz"
 import Screen from "../../Screen/Screen";
 
 const Chapter6 = ({ style }) => {
@@ -8,35 +7,15 @@ const Chapter6 = ({ style }) => {
             <div>
                 <h2>Kapittel 6</h2>
                 <Paragraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Ut quis eleifend lectus, sed lobortis elit.
-                Morbi aliquam nisl et augue vulputate rutrum. 
-                Fusce in volutpat lorem. Nam vitae imperdiet massa. 
-                Sed in velit eget leo pharetra rhoncus. Donec at metus mi. 
-                Aliquam eget vehicula ipsum, eu commodo enim. Duis quis risus dui. 
-                Pellentesque faucibus finibus malesuada. Vivamus ut tempor justo. 
-                Duis in risus consectetur, interdum est ac, lobortis nibh. 
-                Maecenas interdum, turpis vitae tempus vehicula, tortor lacus interdum nibh, 
-                nec egestas elit diam quis lorem.
+                Hva må vi gjøre for å forhindre posisjonslekasje? Som tidligere nevnt, har vi funnet 
+                ut at telefonen din konstant blir sporet. Telefonen vil gi fra seg posisjonsdata til 
+                tredjeparter, nettsider og tek-giganter, uansett om du har skrudd av posisjonsdeling 
+                eller ikke. Til og med når mobilen din er skrudd av, så har man mulighet til å finne ut 
+                posisjonen din. Realiteten er hvis en trusselaktør har evnen til å finne ut posisjonsdataen 
+                din og vil bruke den mot deg, trenger de bare en mobilenhet for å gjøre dette. Derfor vil 
+                det beste tiltaket enkeltmann kan gjøre for å hindre posisjonslekasje er å ikke ha med 
+                mobilen på øvelse eller oppdrag. 
                 </Paragraph>
-                <Paragraph topSpacing={true}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Ut quis eleifend lectus, sed lobortis elit.
-                Morbi aliquam nisl et augue vulputate rutrum. 
-                Fusce in volutpat lorem. Nam vitae imperdiet massa. 
-                Sed in velit eget leo pharetra rhoncus. Donec at metus mi. 
-                Aliquam eget vehicula ipsum, eu commodo enim. Duis quis risus dui. 
-                Pellentesque faucibus finibus malesuada. Vivamus ut tempor justo. 
-                Duis in risus consectetur, interdum est ac, lobortis nibh. 
-                Maecenas interdum, turpis vitae tempus vehicula, tortor lacus interdum nibh, 
-                nec egestas elit diam quis lorem.
-                </Paragraph>
-                <Paragraph topSpacing={true}>
-                    hallaballa
-                </Paragraph>
-                <Quiz>
-                    Spørsmålet
-                </Quiz>
             </div>
         </Screen>
     );

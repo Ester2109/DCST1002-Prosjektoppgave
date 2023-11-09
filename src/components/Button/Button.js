@@ -1,6 +1,10 @@
+import { forwardRef } from "react";
 import styles from "./Button.module.css";
 
-function Button({ children, buttonSize, variant, ...props }) {
+const Button = forwardRef(function Button(
+  { children, buttonSize, variant, style, ...props },
+  ref
+) {
   let fontSize = "1em";
   if (buttonSize === "large") fontSize = "100px";
   if (buttonSize === "medium") fontSize = "50px";
@@ -15,6 +19,7 @@ function Button({ children, buttonSize, variant, ...props }) {
 
   return (
     <button
+      ref={ref}
       className={`${styles.button} ${styles.hover}`}
       style={{
         fontSize: fontSize,
@@ -22,12 +27,13 @@ function Button({ children, buttonSize, variant, ...props }) {
         color: color,
         fontWeight: "semibold",
         border: variant === "text" ? "none" : "solid 2px white",
+        ...style,
       }}
       {...props}
     >
       {children}
     </button>
   );
-}
+});
 
 export default Button;

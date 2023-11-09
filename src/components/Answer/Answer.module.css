@@ -1,3 +1,8 @@
 .answer {
-    margin-top: auto;
+  margin-top: auto;
+  display: flex;
+  gap: 0.5rem;
+  align-items: start;
+  justify-items: middle;
+  text-align: left;
 }

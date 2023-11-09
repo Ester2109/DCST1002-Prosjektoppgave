@@ -1,25 +1,26 @@
 .quiz {
-    background: white;
-    padding: 2rem 2rem;
-    border: 2px solid rgb(100, 100, 100);
-    overflow: hidden;
-    position: relative;
-  }
+  background: white;
+  padding: 2rem 2rem;
+  border: 2px solid rgb(100, 100, 100);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
 
-  .question {
-    position: relative;
-    z-index: 1;
-    font-weight: 500;
-  }
+.question {
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+}
 
-  .questionMark {
-    position: absolute;
-    top: 30%;
-    left: 1rem;
-    transform: translateY(-40%);
-    color: rgba(150, 150, 150, 0.5);
-    font-size: 10rem;
-  }
-  
-
-  
+.questionMark {
+  position: absolute;
+  top: 30%;
+  left: 1rem;
+  transform: translateY(-40%);
+  color: rgba(150, 150, 150, 0.2);
+  font-size: 10rem;
+  pointer-events: none;
+}
