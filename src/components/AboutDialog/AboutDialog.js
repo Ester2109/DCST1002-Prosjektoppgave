@@ -7,9 +7,9 @@ const AboutDialog = ({ open, onClose }) => {
       <Paragraph style={
         {fontWeight: 700,}
       }>Prosjektet er laget av</Paragraph>
-      <Paragraph topSpacing>Sondre Søndergaard: email</Paragraph>
-      <Paragraph>Helene Askeland: email</Paragraph>
-      <Paragraph>Jacob Smukkestad: email</Paragraph>
+      <Paragraph topSpacing>Sondre Søndergaard: sondrehso@stud.ntnu.no</Paragraph>
+      <Paragraph>Helene Askeland: heleask@stud.ntnu.no</Paragraph>
+      <Paragraph>Jacob Smukkestad: jacobsmu@stud.ntnu.no</Paragraph>
       <Paragraph>Ester Halvorsen: esterdh@stud.ntnu.no</Paragraph>
     </Modal>
   );

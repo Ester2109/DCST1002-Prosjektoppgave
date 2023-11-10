@@ -47,8 +47,12 @@ const Chapter5 = ({ style }) => {
           enheten din heller enn navnet. Dersom man først har for eksempel
           posisjonsdata, er det ikke vanskelig å matche den mot annen data som
           igjen gjør det enkelt å avsløre din identitet. Se for eksempel denne
-          NRK-artikkelen som avslørte bevegelsene til flere militært ansatte
-          (https://www.nrk.no/norge/xl/norske-offiserer-og-soldater-avslort-av-mobilen-1.14890424)
+          {" "}
+          <a href="https://www.nrk.no/norge/xl/norske-offiserer-og-soldater-avslort-av-mobilen-1.14890424v">  
+          NRK-artikkelen
+          </a>
+          {" "}
+          som avslørte bevegelsene til flere militært ansatte
         </Paragraph>
         <Paragraph>
           Øyensynlig uskyldig informasjon kan bidra til å gi uønskede aktører et

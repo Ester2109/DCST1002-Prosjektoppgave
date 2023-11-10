@@ -8,7 +8,7 @@ const Chapter3 = ({ style }) => {
   return (
     <Screen id="Chapter3" style={style}>
       <h2>Hva er posisjonsdeling?</h2>
-      <Paragraph>
+      <Paragraph topSpacing={true}>
         De fleste vet hva posisjonsdeling er, og hva det å gi sin posisjonsdata
         innebærer. Posisjonsdeling er en funksjon som alle moderne mobilenheter
         bruker for å beregne hvor enheten din er geografisk. Du kan skru det av
@@ -40,19 +40,26 @@ const Chapter3 = ({ style }) => {
         Nord-Amerika sitt GPS (Global Positioning System), som flere kanskje er
         kjent med fra før av (EUSPA, 2023). Posisjonsdataen samles via signaler
         fra flere satellitt systemer som blir samlet og lest inn for å gi
-        innsikt i dataen. Vi kan prøve å visualisere prosessen i Google Maps: 1.
-        Brukeren skrur på posisjonsdeling. 2. Breddegrad, lengdegrad, retning,
+        innsikt i dataen. Vi kan prøve å visualisere prosessen i Google Maps:
+        <br />
+        <br /> 
+        1. Brukeren skrur på posisjonsdeling. 
+        <br />
+        <br />
+        2. Breddegrad, lengdegrad, retning,
         tidspunkt og beliggenhet (posisjonsdata) til enheten beregnes via GNSS.
+        <br />
+        <br />
         3. Data/posisjon tilbakesendes til brukerens enhet.
       </Paragraph>
-      <Paragraph>
+      <Paragraph topSpacing={true}>
         Selv om posisjonsdeling er et veldig nyttig verktøy å ha, finnes det
         noen ulemper i henhold til brukernes personvern. Ved å tillatte
         posisjonsdeling på applikasjoner samles inn posisjonsdataen din som
         videre kan analyseres, kjøpes og selges av en tredjepart. Under visse
         omstendigheter kan dette utgjøre en alvorlig sårbarhet for sikkerheten.
       </Paragraph>
-      <Paragraph>
+      <Paragraph topSpacing={true}>
         Posisjonen på mobilenheten kan fortsett spores, selv om du har
         deaktivert funksjonen, uavhengig om du bruker en iPhone- eller en
         Android-enhet. Dette skyldes at mobiltelefoner kontinuerlig sender og
@@ -60,7 +67,7 @@ const Chapter3 = ({ style }) => {
         Mobiloperatører kan bruke disse signalene til å finne den generelle
         posisjonen til enheten.
       </Paragraph>
-      <Paragraph>
+      <Paragraph topSpacing={true}>
         Mobiltelefoner med aktivert Wi-Fi søker etter lokale datanettverk selv
         når de ikke er tilkoblet et nettverk. Disse enhetene skanner automatisk
         etter Wi-Fi-nettverk i området og viser signalstyrken, noe som også kan
